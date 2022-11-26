@@ -1,0 +1,66 @@
+@font-face {
+    font-family: customfont;
+    src: url(assets/font/EkorsNonCommercial.otf);
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(assets/font/Quicksand-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url("assets/charles-koh-px-xoEBdkII-unsplash.jpg");
+    height: 500px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgb(82, 80, 80);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.wordlogo {
+    font-family: 'customfont';
+}
+
+#jobs {
+    font-family: 'quicksand';
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#circle {
+    background-color: #F8CA47;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin: 18px;
+}
+
+#navbarNav {
+    margin-right: 130px;
+}
+
+#nav-link {
+    font-family: 'quicksand';
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#nav-link:hover {
+    color: #F8CA47;
+}
+
+.text-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#info {
+    background-color: #ffffff;
+    margin-top: 560px;
+}
