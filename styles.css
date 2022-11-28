@@ -30,6 +30,10 @@ body {
     color: #ffffff;
 }
 
+nav {
+    z-index: 1000;
+}
+
 #circle {
     background-color: #F8CA47;
     height: 5px;
@@ -61,6 +65,65 @@ body {
 }
 
 #info {
-    background-color: #ffffff;
+    font-family: 'quicksand';
+    background-color: #000000;
     margin-top: 560px;
+}
+
+#info1 {
+    font-family: 'quicksand';
+    text-align: center; 
+    padding-top: 93px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    /*background: linear-gradient(to right, #F8CA47, #fcd80d);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;*/
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #F8CA47, #0d75fc);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    text-align: center;
+}
+
+.card {
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+}
+
+.row {
+    padding-bottom: 10px;
+}
+
+p > i {
+    margin-bottom: 3px;
+}
+
+.add-serv {
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+.contact-us {
+    padding: 4px 0 10px;
+}
+
+.contact-us > h2 {
+    padding: 25px 0 15px;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact-us a:hover {
+    color: #F8CA47;
 }
