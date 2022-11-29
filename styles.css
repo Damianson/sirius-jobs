@@ -1,16 +1,18 @@
 @font-face {
     font-family: customfont;
+    font-display: swap;
     src: url(assets/font/EkorsNonCommercial.otf);
+
 }
 
 @font-face {
     font-family: quicksand;
+    font-display: swap;
     src: url(assets/font/Quicksand-VariableFont_wght.ttf);
 }
 
 body {
     background-image: url("assets/charles-koh-px-xoEBdkII-unsplash.jpg");
-    height: 500px;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -32,10 +34,12 @@ body {
 
 nav {
     z-index: 1000;
+    width: 100%;
+    transition: background-color 1s ease;
 }
 
 #circle {
-    background-color: #F8CA47;
+    background-color: #ffd700;
     height: 5px;
     width: 5px;
     border-radius: 50%;
@@ -43,7 +47,7 @@ nav {
 }
 
 #navbarNav {
-    margin-right: 130px;
+    padding-right: 6%;
 }
 
 #nav-link {
@@ -53,16 +57,16 @@ nav {
 }
 
 #nav-link:hover {
-    color: #F8CA47;
+    color: #ffd700;
 }
 
-.text-center {
+/*.text-center {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-}
+}*/
 
 #info {
     font-family: 'quicksand';
@@ -79,16 +83,7 @@ nav {
 h2 {
     font-size: 40px;
     font-weight: 700;
-    /*background: linear-gradient(to right, #F8CA47, #fcd80d);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;*/
-    background-color: #f3ec78;
-    background-image: linear-gradient(45deg, #F8CA47, #0d75fc);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+    color: #ffd700;
     text-align: center;
 }
 
@@ -126,4 +121,11 @@ p > i {
 
 .contact-us a:hover {
     color: #F8CA47;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-position: 50% 20%;
+    }
 }
