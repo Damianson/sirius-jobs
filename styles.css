@@ -11,6 +11,10 @@
     src: url(assets/font/Quicksand-VariableFont_wght.ttf);
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-image: url("assets/charles-koh-px-xoEBdkII-unsplash.jpg");
     background-position: 0 0;
@@ -19,6 +23,7 @@ body {
     background-color: rgb(82, 80, 80);
     background-blend-mode: multiply;
     background-attachment: fixed;
+    position: relative;
 }
 
 .wordlogo {
@@ -60,13 +65,21 @@ nav {
     color: #ffd700;
 }
 
-/*.text-center {
+.hero-sec {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-}*/
+}
+
+.hero-word {
+    color: #ffffff;
+    font-family: 'quicksand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+}
 
 #info {
     font-family: 'quicksand';
@@ -123,9 +136,27 @@ p > i {
     color: #F8CA47;
 }
 
+#sm-screen {
+    display: none;
+}
+
+
+
 @media only screen and (max-width: 600px) {
     body {
         background-size: cover;
         background-position: 50% 20%;
+    }
+
+    #sm-screen {
+        display: unset;
+    }
+
+    #lg-screen {
+        display: none;
+    }
+
+    .hero-sec {
+        top: 45%;
     }
 }
